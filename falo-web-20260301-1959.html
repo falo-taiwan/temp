@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FALO Web 啟動策略：前置說明</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-border {
+            border-image: linear-gradient(to right, #3b82f6, #8b5cf6) 1;
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased leading-relaxed">
+
+    <!-- Header / Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-bold tracking-tight text-blue-600">FALO</span>
+                <span class="text-slate-400">|</span>
+                <span class="text-sm font-medium text-slate-600 uppercase tracking-widest">Web Strategy</span>
+            </div>
+            <div class="text-xs font-mono text-slate-400 bg-slate-100 px-2 py-1 rounded">
+                v1.0.20260301
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+        
+        <!-- Hero Section -->
+        <header class="mb-16">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold mb-6">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                <span>核心夥伴內部版本</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                FALO Web 啟動策略：前置說明
+            </h1>
+            <div class="flex flex-wrap items-center gap-4 text-slate-500 text-sm">
+                <div class="flex items-center">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    <span>Force Cheng X FALO</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <span>Update: 2026 / 3 / 1</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Section 1: Core Strategy -->
+        <section class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-8 w-1 bg-blue-600 rounded-full"></div>
+                <h2 class="text-2xl font-bold">一、 核心戰略：需求先行，網站稍後</h2>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <p class="text-lg text-slate-700 mb-6">
+                    FALO 的定位不是一個「內容容器」，而是 <span class="text-blue-600 font-bold underline decoration-blue-200 underline-offset-4">問題解決方案</span>。我們拒絕「先做殼、再填肉」的傳統建站邏輯。
+                </p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-slate-900">策略目標</h3>
+                        <p class="text-sm text-slate-500">從真實需求出發，透過數據與回饋反推網站結構。</p>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-slate-900">執行路徑</h3>
+                        <p class="text-sm text-slate-500">內容與問卷先行 ➔ 數據分析 ➔ 結構優化 ➔ 網站上線。</p>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-slate-900">核心思維</h3>
+                        <p class="text-sm text-slate-500">FALO Web 是「結果」，而非「起點」。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Survey Plan -->
+        <section class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-8 w-1 bg-blue-600 rounded-full"></div>
+                <h2 class="text-2xl font-bold">二、 雙軌問卷計畫（階段任務）</h2>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+                    <thead>
+                        <tr class="bg-slate-50 border-b border-slate-200">
+                            <th class="px-6 py-4 text-sm font-bold text-slate-600 uppercase tracking-wider">階段</th>
+                            <th class="px-6 py-4 text-sm font-bold text-slate-600 uppercase tracking-wider">問卷主題</th>
+                            <th class="px-6 py-4 text-sm font-bold text-slate-600 uppercase tracking-wider">核心目的</th>
+                            <th class="px-6 py-4 text-sm font-bold text-slate-600 uppercase tracking-wider">預期產出</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="px-6 py-4 font-mono text-xs font-bold text-blue-600">Phase 01</td>
+                            <td class="px-6 py-4 font-bold text-slate-900">AI 導入現況調查</td>
+                            <td class="px-6 py-4 text-sm text-slate-600">釐清企業與個人在 AI 導入中的「卡點」（摸索、整合、管理）。</td>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-800">教材與顧問優先權。</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="px-6 py-4 font-mono text-xs font-bold text-blue-600">Phase 02</td>
+                            <td class="px-6 py-4 font-bold text-slate-900">學習與書籍現況</td>
+                            <td class="px-6 py-4 text-sm text-slate-600">理解學習路徑、閱讀習慣與工具偏好（理解狀態而非推廣）。</td>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-800">優化資源篩選邏輯。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 3: Protocol -->
+        <section class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-8 w-1 bg-blue-600 rounded-full"></div>
+                <h2 class="text-2xl font-bold">三、 推廣與內測協議</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-blue-600 p-8 rounded-2xl text-white shadow-lg shadow-blue-200">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <span class="mr-2">01</span> 小範圍內測 (Alpha Test)
+                    </h3>
+                    <ul class="space-y-3 text-blue-50 text-sm">
+                        <li class="flex items-start"><span class="mr-2 opacity-50">#</span> 對象：核心夥伴及種子成員。</li>
+                        <li class="flex items-start"><span class="mr-2 opacity-50">#</span> 任務：測試邏輯、語境與填答壓力。</li>
+                        <li class="flex items-start"><span class="mr-2 opacity-50">#</span> 價值：內測者即為未來教材的第一波受益者。</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                    <h3 class="text-xl font-bold mb-4 flex items-center text-slate-900">
+                        <span class="mr-2 text-slate-300">02</span> 正式對外發布
+                    </h3>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex items-start"><span class="text-blue-500 mr-2">•</span> 通路：核心成員主頻道（如 LinkedIn）。</li>
+                        <li class="flex items-start"><span class="text-blue-500 mr-2">•</span> 原則：問卷連結可自由分享給熟識之人。</li>
+                        <li class="flex items-start"><span class="text-blue-500 mr-2">•</span> 歸屬：強調 FALO 品牌，建立專業中立感。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Blueprint -->
+        <section class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-8 w-1 bg-blue-600 rounded-full"></div>
+                <h2 class="text-2xl font-bold">四、 網站功能藍圖（預設四區）</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="p-6 bg-white rounded-xl border border-slate-200 card-hover shadow-sm">
+                    <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-lg flex items-center justify-center mb-4 font-bold text-lg">W</div>
+                    <h4 class="font-bold mb-2">AI 工作流程</h4>
+                    <p class="text-xs text-slate-500">怎麼做？實踐與自動化路徑。</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-slate-200 card-hover shadow-sm">
+                    <div class="w-10 h-10 bg-red-50 text-red-600 rounded-lg flex items-center justify-center mb-4 font-bold text-lg">G</div>
+                    <h4 class="font-bold mb-2">AI 治理風險</h4>
+                    <p class="text-xs text-slate-500">怎麼管？資安、合規與流程。</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-slate-200 card-hover shadow-sm">
+                    <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-lg flex items-center justify-center mb-4 font-bold text-lg">R</div>
+                    <h4 class="font-bold mb-2">好資源整理</h4>
+                    <p class="text-xs text-slate-500">看什麼？書籍、工具、文章。</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-slate-200 card-hover shadow-sm">
+                    <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center mb-4 font-bold text-lg">I</div>
+                    <h4 class="font-bold mb-2">互動合作區</h4>
+                    <p class="text-xs text-slate-500">誰參與？問卷、留言、合作。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Focus -->
+        <section class="mb-20">
+            <div class="bg-slate-900 text-white p-10 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-40 h-40" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                </div>
+                <div class="relative z-10">
+                    <h2 class="text-2xl font-bold mb-8 flex items-center">
+                        <span class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-sm mr-3">V</span>
+                        五、 當前執行重心
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-x-12 gap-y-6">
+                        <div class="flex items-center space-x-3 group">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full group-hover:scale-150 transition-transform"></div>
+                            <span class="text-slate-300">理解現場：摸清真實導入困難</span>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full group-hover:scale-150 transition-transform"></div>
+                            <span class="text-slate-300">穩定內容：文章與方法論打磨</span>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full group-hover:scale-150 transition-transform"></div>
+                            <span class="text-slate-300">結構清晰：讓架構自然成形</span>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full group-hover:scale-150 transition-transform"></div>
+                            <span class="text-slate-300">拒絕流量：不求一次到位的曝光</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center pt-12 border-t border-slate-200">
+            <p class="text-slate-400 text-sm font-medium italic mb-2">
+                "先理解現場，再建立結構。讓我們讓 FALO 從需求中自然成形。"
+            </p>
+            <div class="flex justify-center space-x-4 text-xs text-slate-400 font-mono">
+                <span>FORCE CHENG</span>
+                <span>&bull;</span>
+                <span>FALO ECOSYSTEM</span>
+                <span>&bull;</span>
+                <span>INTERNAL ONLY</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <div class="fixed bottom-6 right-6">
+        <button onclick="window.scrollTo(0,0)" class="bg-white p-3 rounded-full shadow-lg border border-slate-200 text-slate-400 hover:text-blue-600 transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+        </button>
+    </div>
+
+</body>
+</html>
